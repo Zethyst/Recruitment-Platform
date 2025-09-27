@@ -31,7 +31,6 @@ interface UserData {
   lastName: string;
   email: string;
   phone?: string;
-  userType: "jobseeker" | "employer";
   location?: string;
   joinDate: string;
   profileImage?: string;

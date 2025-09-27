@@ -10,13 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import toast from "react-hot-toast";
 import { z } from "zod";
 import { useRouter } from "next/navigation";
@@ -44,9 +37,6 @@ const registerSchema = z
       .min(8, "Password must be at least 8 characters")
       .max(128, "Password must be less than 128 characters"),
     confirmPassword: z.string(),
-    userType: z.enum(["jobseeker", "employer"], {
-      message: "Please select user type",
-    }),
     company: z.string().optional(),
   })
   .refine((data) => data.password === data.confirmPassword, {
@@ -61,7 +51,6 @@ const Register = () => {
     email: "",
     password: "",
     confirmPassword: "",
-    userType: "",
     company: "",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -192,38 +181,16 @@ const Register = () => {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="userType">I am a...</Label>
-              <Select
-                onValueChange={(value) => handleInputChange("userType", value)}
+              <Label htmlFor="company">Company Name (Optional)</Label>
+              <Input
+                id="company"
+                type="text"
+                value={formData.company}
+                onChange={(e) => handleInputChange("company", e.target.value)}
                 disabled={isLoading}
-              >
-                <SelectTrigger
-                  className={errors.userType ? "border-destructive" : ""}
-                >
-                  <SelectValue placeholder="Select user type" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="jobseeker">Job Seeker</SelectItem>
-                  <SelectItem value="employer">Employer</SelectItem>
-                </SelectContent>
-              </Select>
-              {errors.userType && (
-                <p className="text-sm text-destructive">{errors.userType}</p>
-              )}
+                placeholder="Enter your company name"
+              />
             </div>
-
-            {formData.userType === "employer" && (
-              <div className="space-y-2">
-                <Label htmlFor="company">Company Name</Label>
-                <Input
-                  id="company"
-                  type="text"
-                  value={formData.company}
-                  onChange={(e) => handleInputChange("company", e.target.value)}
-                  disabled={isLoading}
-                />
-              </div>
-            )}
 
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>

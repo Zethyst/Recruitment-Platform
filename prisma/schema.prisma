@@ -16,7 +16,6 @@ model User {
   firstName String
   lastName  String
   password  String
-  userType  UserType
   company   String?
   phone     String?
   location  String?
@@ -53,7 +52,3 @@ model Experience {
   @@map("experiences")
 }
 
-enum UserType {
-  jobseeker
-  employer
-}

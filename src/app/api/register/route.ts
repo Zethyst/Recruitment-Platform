@@ -8,7 +8,6 @@ const registerSchema = z.object({
   lastName: z.string().min(2, "Last name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
   password: z.string().min(8, "Password must be at least 8 characters"),
-  userType: z.enum(["jobseeker", "employer"]),
   company: z.string().optional(),
 });
 
@@ -37,7 +36,6 @@ export async function POST(req: NextRequest) {
         firstName: validatedData.firstName,
         lastName: validatedData.lastName,
         password: hashedPassword,
-        userType: validatedData.userType,
         company: validatedData.company,
         skills: ["Communication", "Problem Solving", "Teamwork"], // Default skills
         location: "Not specified", // Default location
