@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Recruitment Platform</h1>
 
-## Getting Started
 
-First, run the development server:
+## 🖥️ Tech Stack
+**Frontend:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![nextjs](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)&nbsp;
+![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)&nbsp;
+![shadcnUI](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)&nbsp;
+![Zod](https://img.shields.io/badge/Zod-000000?style=for-the-badge&logo=zod&logoColor=3068B7)&nbsp;
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Backend:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)&nbsp;
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Deployed On:**
 
-## Learn More
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Screenshots:
+![home](/img/Home.png)
+![profile](/img/Profile.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 🚀 Getting Started:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Before you begin, ensure you have the following installed on your local machine:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) (v6 or later) or [Yarn](https://yarnpkg.com/) (v1 or later)
+
+## 🏠 Running the Project Locally:
+
+Follow these steps to run the Next.js project on your local machine:
+
+1. **Clone the Repository:**
+
+    ```sh
+    git clone https://github.com/Zethyst/Recruitment-Platform.git
+    cd Recruitment-Platform
+    ```
+
+2. **Install Dependencies:**
+
+    Using npm:
+
+    ```sh
+    npm install
+    ```
+
+    Or using Yarn:
+
+    ```sh
+    yarn install
+    ```
+
+3. **Run the Development Server:**
+
+    Using npm:
+
+    ```sh
+    npm run dev
+    ```
+
+    Or using Yarn:
+
+    ```sh
+    yarn dev
+    ```
+
+4. **Open Your Browser:**
+
+    Open your browser and navigate to [http://localhost:3000](http://localhost:3000). You should see the Next.js application running!
+
+## 📜 License:
+
+This project is licensed under the MIT License.
+
+
+
+<h2>📬 Contact</h2>
+
+If you want to contact me, you can reach me through below handles.
+
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshat-jaiswal-4664a2197)
+
+© 2025 Akshat Jaiswal
+
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
